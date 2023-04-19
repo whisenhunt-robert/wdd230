@@ -6,9 +6,10 @@ body {
 }
 
 header, nav, main, footer {
-    margin: 1.5rem;
+    margin: 1.5px;
     max-width: 600px;
     text-align: left;
+    padding: 1px;
 }
 
 header {
@@ -31,8 +32,4 @@ header, footer {
     text-align: center;
     color: ghostwhite;
     border: 1px solid #fff;
-} 
-
-footer {
-    
 }

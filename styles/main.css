@@ -1,0 +1,38 @@
+body {
+    font-size: 17px;
+    line-height: 1.3;
+    background-color: #000;
+    color: ghostwhite;
+}
+
+header, nav, main, footer {
+    margin: 1.5rem;
+    max-width: 600px;
+    text-align: left;
+}
+
+header {
+    line-height: 4.8;
+}
+
+header img {
+    margin: 20px;
+    border: 1px solid #fff;
+    max-width: 125px;
+    float: left;
+}
+
+a {
+    color: darkred;
+}
+
+header, footer {
+    background-color:darkred;
+    text-align: center;
+    color: ghostwhite;
+    border: 1px solid #fff;
+} 
+
+footer {
+    
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my home page for WDD 230: Assignment Portal.">
+    <title>WDD 230: Assignment Portal</title>
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/me2023.jpg" alt="Me at church wearing a face mask."><h1>Robert Whisenhunt</h1>
+    </header>
+    <main>
+        <h2>WDD 230: Assignment Portal</h2>
+    </main>
+    <nav>
+        <ul>
+            <li>Lesson 02: <a href="./">Title</a></li>
+            <li>Lesson 03: <a href="./">Title</a></li>
+            <li>Lesson 04: <a href="./">Title</a></li>
+            <li>Lesson 05: <a href="./">Title</a></li>
+            <li>Lesson 06: <a href="./">Title</a></li>
+            <li>Lesson 07: <a href="./">Title</a></li>
+            <li>Lesson 08: <a href="./">Title</a></li>
+            <li>Lesson 09: <a href="./">Title</a></li>
+            <li>Lesson 10: <a href="./">Title</a></li>
+            <li>Lesson 11: <a href="./">Title</a></li>
+        </ul>
+    </nav>
+    <footer>
+        &copy; 2023 .:|:. Robert Whisenhunt .:|:. North Carolina<br>
+        Last Updated: <span id="lastUpdated"></span>
+    </footer>
+</body>
+<script>
+    let lastUpdated = new Date(document.lastModified);
+    document.getElementById("lastUpdated").innerHTML = lastUpdated;
+</script>
+</html>

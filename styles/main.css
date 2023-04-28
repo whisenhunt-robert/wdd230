@@ -10,25 +10,25 @@ header, nav, main, footer {
     max-width: 600px;
     text-align: left;
     padding: 1px;
+    font-family: 'Roboto Slab', 'Vollkorn', 'Pathway Extreme', sans-serif;
 }
 
 header {
-    line-height: 4.8;
+    line-height: 0;
 }
 
 header img {
-    margin: 20px;
-    border: 1px solid #fff;
+    margin: 10px;
     max-width: 125px;
-    float: left;
+    border: 2px solid #fff;
 }
 
 a {
-    color: darkred;
+    color:deepskyblue;
 }
 
 header, footer {
-    background-color:darkred;
+    background-color:navy;
     text-align: center;
     color: ghostwhite;
     border: 1px solid #fff;

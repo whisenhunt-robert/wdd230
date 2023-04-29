@@ -7,14 +7,14 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 header, main, footer {
     margin: 1.5px auto;
     max-width: 1000px;
     text-align: center;
-    padding: 1px;
+    padding: 2px;
     font-family: 'Roboto Slab', 'Vollkorn', 'Pathway Extreme', sans-serif;
 }
 
@@ -30,6 +30,14 @@ header img {
 
 a {
     color:deepskyblue;
+}
+
+section {
+    border: 1px solid #fff;
+}
+
+section h3 {
+    background-color: navy;
 }
 
 header, footer {

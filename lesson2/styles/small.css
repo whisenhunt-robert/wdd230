@@ -1,0 +1,35 @@
+body {
+    font-size: 17px;
+    line-height: 1.3;
+    background-color: #000;
+    color: ghostwhite;
+}
+
+header, nav, main, footer {
+    margin: 1.5px;
+    max-width: 600px;
+    text-align: left;
+    padding: 1px;
+    font-family: 'Roboto Slab', 'Vollkorn', 'Pathway Extreme', sans-serif;
+}
+
+header {
+    line-height: 0;
+}
+
+header img {
+    margin: 10px;
+    max-width: 125px;
+    border: 2px solid #fff;
+}
+
+a {
+    color:deepskyblue;
+}
+
+header, footer {
+    background-color:navy;
+    text-align: center;
+    color: ghostwhite;
+    border: 1px solid #fff;
+}

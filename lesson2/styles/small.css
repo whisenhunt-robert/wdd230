@@ -22,12 +22,6 @@ header {
     line-height: 0.7;
 }
 
-header img {
-    margin: 10px;
-    max-width: 125px;
-    border: 2px solid #fff;
-}
-
 a {
     color:deepskyblue;
 }

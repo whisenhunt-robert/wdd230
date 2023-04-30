@@ -1,5 +1,41 @@
 @media only screen and (min-width: 32.5em) {
+    
     main {
+        display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    header, main, footer {
+        margin: 1.5px;
+        max-width: 1000px;
+        text-align: center;
+        padding: 2px;
+        font-family: 'Roboto Slab', 'Vollkorn', 'Pathway Extreme', sans-serif;
+    }
+
+    header {
+        line-height: 0.7;
+    }
+    
+    a {
+        color:deepskyblue;
+    }
+
+    section {
+        border: 1px solid #fff;
+    }
+
+    section img {
+        padding: 1px;
+    }
+    
+    section h3 {
+        background-color: navy;
+    }
+    
+    header, footer {
+        background-color:navy;
+        color: ghostwhite;
+        border: 1px solid #fff;
     }
 }

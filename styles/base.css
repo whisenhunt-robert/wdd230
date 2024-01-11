@@ -43,7 +43,7 @@ h3 {
     color: white;  
 }
 
-a {
+header a {
     color: snow;
     text-decoration: none;
 }
@@ -58,9 +58,17 @@ li {
     padding: 3px;
 }
 
+li a {
+    color: blue;
+}
+
 header, footer {
     background-color: darkred;
     text-align: center;
     color: snow;
     border: 2px solid black;
+}
+
+.lastMod {
+    color: yellow;
 }

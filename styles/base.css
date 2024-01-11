@@ -28,8 +28,19 @@ header nav {
     text-align: center;
 }
 
+main {
+    width: 90%;
+}
+
 h2, h3, p {
     text-align: center;
+}
+
+h3 {
+    background-color: steelblue;
+    border: 2px solid black;
+    padding: 3px;
+    color: white;  
 }
 
 a {
@@ -37,8 +48,14 @@ a {
     text-decoration: none;
 }
 
+ul {
+    border: 2px solid black;
+    padding: 10px;
+}
+
 li {
     list-style: none;
+    padding: 3px;
 }
 
 header, footer {

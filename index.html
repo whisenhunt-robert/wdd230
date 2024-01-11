@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Robert Whisenhunt - WDD 230 - Web Frontend Development</title>
+    <meta description="WDD 230 - Web Frontend Development, Robert Whisenhunt, course assignment portal">
+    <meta author="">
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@300&family=Roboto+Slab:wght@300&family=Vollkorn&display=swap" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
 </head>
 <body>
-    <p>Testing.</p>
+    <header>
+        <img src="images/profile_photo.jpg" alt="My profile photo.">
+        <h1>Robert Whisenhunt</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+            <a href="chamber/">Chamber</a>
+            <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+        </nav>
+    </header>
+    <main>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ul>
+                <li>01:<a href=""></a></li>
+                <li>02:<a href=""></a></li>
+                <li>03:<a href=""></a></li>
+                <li>04:<a href=""></a></li>
+                <li>05:<a href=""></a></li>
+                <li>06:<a href=""></a></li>
+                <li>07:<a href=""></a></li>
+                <li>08:<a href=""></a></li>
+                <li>09:<a href=""></a></li>
+                <li>10:<a href=""></a></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h3>Information</h3>
+            <p>Weather:<span id="weather"></span></p>
+            <p>Number of Visits:<span id="visits"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Robert Whisenhunt | North Carolina</p></span>
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
 </body>
 </html>

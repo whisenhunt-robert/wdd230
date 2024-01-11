@@ -1,0 +1,44 @@
+body {
+    margin: auto;
+    width: 35%;
+}
+
+header, nav,  main, footer {
+    margin: auto;
+    padding: 1px;
+    font-family: 'Roboto Slab', 'Vollkorn', 'Pathway Extreme', sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 100px auto;
+    text-align: center;
+    grid-column-gap: 50px;
+    padding: 5px;
+}
+
+header img {
+    margin: 10px;
+    max-width: 125px;
+    border: 2px solid black;
+}
+
+header nav {
+    background-color: black;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+header, footer {
+    background-color:steelblue;
+    text-align: center;
+    color: white;
+    border: 2px solid black;
+}

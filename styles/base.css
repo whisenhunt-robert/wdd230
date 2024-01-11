@@ -37,14 +37,14 @@ h2, h3, p {
 }
 
 h3 {
-    background-color: steelblue;
+    background-color: darkred;
     border: 2px solid black;
     padding: 3px;
     color: white;  
 }
 
 a {
-    color: white;
+    color: snow;
     text-decoration: none;
 }
 
@@ -59,8 +59,8 @@ li {
 }
 
 header, footer {
-    background-color:steelblue;
+    background-color: darkred;
     text-align: center;
-    color: white;
+    color: snow;
     border: 2px solid black;
 }

@@ -1,5 +1,4 @@
 body {
-    display: grid;
     margin: auto;
     width: 40%;
 }
@@ -13,8 +12,8 @@ header, nav,  main, footer {
 header {
     display: grid;
     text-align: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
     padding: 5px;
 }
 
@@ -30,10 +29,14 @@ header h1 {
     text-align: center;
 }
 
-header nav {
+nav {
     background-color: black;
     text-align: center;
-    grid-row: 2/2;
+}
+
+nav a {
+    text-decoration: none;
+    color: snow;
 }
 
 main {
@@ -48,12 +51,7 @@ h3 {
     background-color: darkred;
     border: 2px solid black;
     padding: 3px;
-    color: white;  
-}
-
-header a {
-    color: snow;
-    text-decoration: none;
+    color: snow;  
 }
 
 ul {
@@ -73,7 +71,6 @@ li a {
 header, footer {
     background-color: darkred;
     text-align: center;
-    width: 100%;
     color: snow;
     border: 2px solid black;
 }

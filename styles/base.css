@@ -1,6 +1,7 @@
 body {
+    display: grid;
     margin: auto;
-    width: 35%;
+    width: 40%;
 }
 
 header, nav,  main, footer {
@@ -11,21 +12,28 @@ header, nav,  main, footer {
 
 header {
     display: grid;
-    grid-template-columns: 100px auto;
     text-align: center;
-    grid-column-gap: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
     padding: 5px;
 }
 
 header img {
     margin: 10px;
     max-width: 125px;
+    grid-column: 1/2;
     border: 2px solid black;
+}
+
+header h1 {
+    grid-column: 2/2;
+    text-align: center;
 }
 
 header nav {
     background-color: black;
     text-align: center;
+    grid-row: 2/2;
 }
 
 main {
@@ -65,6 +73,7 @@ li a {
 header, footer {
     background-color: darkred;
     text-align: center;
+    width: 100%;
     color: snow;
     border: 2px solid black;
 }

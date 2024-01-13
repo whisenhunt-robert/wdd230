@@ -1,6 +1,6 @@
 body {
     margin: auto;
-    width: 40%;
+    width: 35%;
 }
 
 header, nav,  main, footer {
@@ -10,22 +10,21 @@ header, nav,  main, footer {
 
 header {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
     padding: 5px;
 }
 
 header img {
     margin: 10px;
-    max-width: 125px;
-    grid-row: 1/4;
+    max-width: 70px;
+    grid-column: 2;
     border: 2px solid black;
 }
 
 header h1 {
-    grid-column: 2/3;
-    grid-row: 2;
-    text-align: center;
+    margin: 35px;
+    grid-column: 3;
+    text-align: left;
 }
 
 nav {
@@ -39,28 +38,42 @@ nav {
 nav a {
     text-decoration: none;
     color: snow;
+    padding: 5px;
 }
 
 main {
     margin: auto;
     display: grid;
-    grid-template-rows: auto auto auto auto;
+    grid-column: 1/2;
+    /*grid-template-rows: auto auto auto auto;*/
     width: 90%;
+}
+
+.card {
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 5px;
 }
 
 h2, h3, p {
     text-align: center;
 }
 
+hr.separator {
+    border: 1px solid black;
+    margin: 0;
+    width: 100%;
+}
+
 h3 {
     background-color: darkred;
-    border: 2px solid black;
+    margin: 0;
     padding: 3px;
     color: snow;  
 }
 
 ul {
-    border: 2px solid black;
+    margin: 0;
     padding: 10px;
 }
 

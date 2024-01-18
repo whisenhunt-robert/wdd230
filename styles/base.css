@@ -1,7 +1,6 @@
 body {
     display: grid;
-    margin: auto;
-    width: 35%;
+    margin: 0 auto;
 }
 
 header, nav,  main, footer {
@@ -10,22 +9,16 @@ header, nav,  main, footer {
 }
 
 header {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     padding: 5px;
 }
 
 header img {
-    margin: 10px;
     max-width: 70px;
-    grid-column: 2;
+    display: block;
     border: 2px solid black;
-    float: left;
-}
-
-header h1 {
-    margin: auto;
-    grid-column: 3;
 }
 
 nav {

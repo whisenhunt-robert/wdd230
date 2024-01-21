@@ -1,0 +1,75 @@
+body {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+header, footer {
+    padding: 1px;
+    font-family: 'Roboto Slab', 'Vollkorn', 'Pathway Extreme', sans-serif;
+}
+
+header img {
+    max-width: 70px;
+    display: block;
+    border: 2px solid black;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+ 
+h2, h3, p {
+    text-align: center;
+}
+ 
+.card {
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 5px;
+    justify-content: center;
+}
+ 
+.card a {
+    text-decoration: none;
+    color: blue;
+}
+ 
+.card img {
+    max-width: 300px;
+    display: block;
+    margin: 5px auto;
+    align-items: center;
+    border: 2px solid black;
+}
+ 
+h2, h3, p {
+    text-align: center;
+}
+ 
+h2 {
+    margin-bottom: 0;
+    padding: 1px;
+}
+ 
+h3 {
+    background-color: darkred;
+    margin: 0;
+    padding: 3px;
+    color: snow;
+}
+ 
+header, footer {
+    background-color: darkred;
+    text-align: center;
+    color: snow;
+    border: 2px solid black;
+}
+ 
+.lastMod {
+    color: yellow;
+}

@@ -40,7 +40,6 @@ main {
     margin-bottom: 5px;
     display: grid;
     grid-column: 1/2;
-    /*grid-template-rows: auto auto auto auto;*/
     width: 90%;
     font-weight: bold;
 }
@@ -98,3 +97,50 @@ header, footer {
 .lastMod {
     color: yellow;
 }
+
+/* #menu {
+	font-size: 1.5rem;
+	border: 2px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: darkred;
+	color: snow;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "✖️";
+}
+
+.active::before {
+    content: "🍕";
+}
+
+.active::after {
+    content: "🍕";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+.navigation a:hover {
+	background-color: snow;
+	color: black;
+	font-weight: 700;
+}
+
+.open a {
+	display: block;
+}
+
+iframe {
+    max-width: 400px;
+    max-height: 350px;
+    display: block;
+    border: 2px solid black;
+} */

@@ -6,7 +6,6 @@ header,
 nav,
 main,
 footer {
-    padding: 1px;
     font-family: 'Roboto Slab', 'Vollkorn', 'Pathway Extreme', sans-serif;
 }
 
@@ -24,11 +23,7 @@ header img {
 }
 
 nav {
-    display: grid;
-    grid-template-rows: auto;
     background-color: black;
-    text-align: center;
-    padding: 5px;
 }
 
 nav a {
@@ -42,11 +37,6 @@ main {
     margin-bottom: 5px;
     width: 90%;
     font-weight: bold;
-}
-
-#main-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
 .card {
@@ -116,71 +106,49 @@ footer {
     color: yellow;
 }
 
-#header {
-    position: relative;
-}
-
-.material-symbols-outlined {
-    cursor: pointer;
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
     position: absolute;
-    right: 0.5rem;
-    top: .5rem;
-    margin-bottom: .5rem;
+    top: 1rem;
+    right: 1rem;
 }
 
-.nav-menu-close {
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖️";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: black;
+    color: snow;
+}
+
+.navigation a {
     display: none;
-}
-
-#menu-Btn,
-#close-Btn {
-    display: inline-block;
-}
-
-.close-ham-btn {
-    display: none;
-}
-
-.close-close-btn {
-    display: none;
-}
-
-nav a {
-    padding: .5rem;
-    color: var(--text-color);
-    font-size: 1.75rem;
+    padding: 1rem;
+    text-align: center;
     text-decoration: none;
+    color: #fff;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+.navigation a:hover {
+    background-color: snow;
+    color: black;
+    font-weight: 700;
 }
 
-@keyframes expandNav {
-    from {
-        max-height: 0;
-    }
-
-    to {
-        max-height: 500px;
-    }
-}
-
-#nav {
-    overflow: hidden;
-    max-height: 0;
-    animation: expandNav 2s ease-in-out forwards;
-}
-
-#nav a {
-    opacity: 0;
-    animation: fadeIn 4s ease-in-out forwards;
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
 }
 
 .active::before {
@@ -191,52 +159,13 @@ nav a {
     content: "🍕";
 }
 
-#menu {
-    font-size: 1.5rem;
-    border: 2px solid rgba(0, 0, 0, .3);
-    padding: 3px 7px 6px;
-    background-color: darkred;
-    color: snow;
-}
-
-/* #menu::before {
-    content: "☰";
-}
-
-#menu.open::before {
-    content: "✖️";
-} */
-
-.navigation {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-}
-
-.navigation a {
-    display: block;
-    padding: 2px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.navigation a:hover {
-    background-color: snow;
-    color: black;
-    font-weight: 700;
-}
-
-.open a {
-    display: block;
-}
-
 #map-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
     padding-bottom: 75%;
     height: 0;
-    margin: 5px 60px;
+    margin: 10px 60px;
 }
 
 #map-container iframe {

@@ -26,7 +26,8 @@
         <img src="images/profile_photo.jpg" alt="My profile photo.">
         <h1>Robert Whisenhunt</h1>
     </header>
-    <button id="menu"></button>
+    <!-- Hamburger Button -->
+    <button id="menu" onclick="toggleMapVisibility()"></button>
     <nav class="navigation">
         <a href="https://whisenhunt-robert.github.io/wdd230/" class="active">Home</a>
         <a href="lesson03/chamber-site-plan.html">Site Plan</a>
@@ -38,7 +39,7 @@
         <div id="main-container">
             <h2>WDD 230: Web Frontend Development</h2>
             <hr class="separator">
-            <section id="section-one" class="card">
+            <section class="card">
                 <h3>Learning Activities</h3>
                 <ul>
                     <li>01: <a href="lesson01/holygrail.html">Holygrail</a> | <a
@@ -55,7 +56,7 @@
                     <li>10: <a href=""></a></li>
                 </ul>
             </section>
-            <section id="section-two" class="card">
+            <section class="card">
                 <h3>Information</h3>
                 <div id="info">
                     <p>Weather: <span id="weather"></span><br>
@@ -63,19 +64,22 @@
                 </div>
             </section>
         </div>
+        <div id="map-container">
+            <div id="map">
+                <iframe title="Winston Salem, NC"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206307.192153105!2d-80.40826810937106!3d36.10445914932991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8853a19b82d6b277%3A0x50325f54b43f8245!2sWinston-Salem%2C%20NC!5e0!3m2!1sen!2sus!4v1705990761562!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
     </main>
-    <div id="map-container">
-        <iframe id="map" title="Winston Salem, NC"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206307.192153105!2d-80.40826810937106!3d36.10445914932991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8853a19b82d6b277%3A0x50325f54b43f8245!2sWinston-Salem%2C%20NC!5e0!3m2!1sen!2sus!4v1705990761562!5m2!1sen!2sus"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
     <footer>
         <p>&copy;<span id="currentYear"></span><br>Robert Whisenhunt<br>North Carolina</p>
         <div class="lastMod">
             <p>Last modification: <span id="lastModified"></span></p>
         </div>
     </footer>
+    <!-- JavaScript calls -->
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
 </body>

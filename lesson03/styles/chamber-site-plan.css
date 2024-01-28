@@ -1,0 +1,65 @@
+body {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+header,
+nav,
+main,
+footer {
+    font-family: 'Roboto Slab', 'Vollkorn', 'Pathway Extreme', sans-serif;
+}
+
+header,
+footer {
+    background-color: #191970;
+    text-align: left;
+    color: #fffafa;
+    border: 2px solid #000000;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+header img {
+    max-width: 150px;
+    background-color: snow;
+    display: block;
+    border: 2px solid black;
+}
+
+header h1 {
+    padding: 10px;
+}
+
+main {
+    margin: auto;
+    max-width: 90%;
+    margin-bottom: 5px;
+    width: 90%;
+}
+
+.color-palette {
+    border: 2px solid black;
+    padding: 3px;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.wire-mobile {
+    border: 2px solid black;
+    max-width: 400px;
+    max-height: 363px;
+}
+
+.wire-desktop {
+    border: 2px solid black;
+    max-width: 400px;
+}
+
+footer {
+    padding: 5px;
+}

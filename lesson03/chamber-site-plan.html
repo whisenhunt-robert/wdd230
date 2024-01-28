@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chamber Site Plan</title>
+    <meta name="description" content="Chamber Site Plan, Robert Whisenhunt, chamber site plan">
+    <meta name="author" content="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@300&family=Roboto+Slab:wght@300&family=Vollkorn&display=swap"
+        rel="stylesheet">
+    <link href="styles/chamber-site-plan.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <img src="images/winston-salem-logo.png" alt="Winston Salem Logo">
+        <h1>Winston-Salem Chamber of Commerce Site Plan</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Site Name</h2>
+            <p>Winston Salem Chamber of Commerce.</p>
+        </section>
+        <section>
+            <h2>Site Purpose</h2>
+            <p>This site is to help viewers learn more about the city of Winston Salem to help them decide how they wish
+                to spend their time during their visit in the city.</p>
+        </section>
+        <section>
+            <h2>Scenarios</h2>
+            <ul>
+                <li>What kind of activites take place in the city of Winston Salem?</li>
+                <li>Are there good restaurants to eat there?</li>
+                <li>What makes the city special that would peek my interest to visit?</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Color Schema</h2>
+            <p>I tried to match the color scheme for the logo of the city. I want the page to speak that this is a
+                chamber site for the city of Winston Salem. Midnight Blue is the closest I could find to the logo.
+                Midnight Blue is used in the header and footer with snow-colored font. Black for the font color for the
+                rest of the page.</p>
+            <img src="images/color-palette.png" alt="Color palette for the web site." class="color-palette">
+        </section>
+        <section>
+            <h2>Typography</h2>
+            <p>I want the headings to be bold like usual, but the regular font to not be bold during the paragraphs. I
+                chose Roboto Slab as the primary font family because I like how it looks for a city web page.</p>
+        </section>
+        <section>
+            <h2>Wireframe</h2>
+            <p>These are the mobile and desktop wireframes to give an idea of how the page will be displayed. The
+                desktop view will feature the current weather, but it won't be visable on mobile.
+                There will be three categories that will feature the city's events, restaurants, and what makes the city
+                special.</p>
+            <img src="images/wireframe-mobile.png" alt="Wireframe for mobile view." class="wire-mobile">
+            <img src="images/wireframe-desktop.png" alt="Wireframe for Desktop view." class="wire-desktop">
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span><br>Robert Whisenhunt<br>North Carolina</p>
+        <div class="lastMod">
+            <p>Last modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
 </body>
+
 </html>

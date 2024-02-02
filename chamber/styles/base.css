@@ -1,0 +1,65 @@
+body {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+header,
+nav,
+main,
+footer {
+    font-family: 'Roboto Slab', 'Vollkorn', 'Pathway Extreme', sans-serif;
+}
+
+header,
+footer {
+    background-color: #3f2894;
+    text-align: center;
+    color: #fffafa;
+    border: 2px solid #000000;
+}
+
+header {
+    /* display: flex; */
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+
+header img {
+    max-width: 150px;
+    background-color: snow;
+    /* display: block; */
+    border: 2px solid black;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 50px;
+    /* Adjust the height as needed */
+    background-color: #000;
+    /* Adjust the color as needed */
+    margin: 0 20px;
+    /* Adjust the margin as needed */
+}
+
+nav a {
+    text-decoration: none;
+    color: snow;
+    padding: 5px;
+}
+
+main {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5px;
+    width: 90%;
+    font-weight: bold;
+}
+
+main img {
+    height: 200px;
+    margin: auto;
+    background-color: snow;
+    display: block;
+    border: 2px solid black;
+}

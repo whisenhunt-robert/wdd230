@@ -32,20 +32,64 @@ header img {
     border: 2px solid black;
 }
 
-.vertical-line {
+/* .vertical-line {
     width: 2px;
     height: 50px;
-    /* Adjust the height as needed */
     background-color: #000;
-    /* Adjust the color as needed */
     margin: 0 20px;
-    /* Adjust the margin as needed */
+} */
+
+.active::before {
+    content: "👉";
 }
 
 nav a {
     text-decoration: none;
     color: snow;
     padding: 5px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖️";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: snow;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: snow;
+    color: black;
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
 }
 
 main {
@@ -57,9 +101,9 @@ main {
 }
 
 main img {
-    height: 200px;
+    height: 300px;
     margin: auto;
     background-color: snow;
     display: block;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }

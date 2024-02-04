@@ -92,6 +92,11 @@ nav a {
     display: block;
 }
 
+#main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 main {
     margin: auto;
     text-align: center;

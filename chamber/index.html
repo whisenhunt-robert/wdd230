@@ -10,10 +10,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@300&family=Roboto+Slab:wght@300&family=Vollkorn&display=swap"
         rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/medium.css" rel="stylesheet">
     <link href="styles/large.css" rel="stylesheet">
-    <link href="styles/normalize.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Winston Salem, NC Chamber of Commerce">
     <meta property="og:type" content="website">
@@ -22,11 +22,11 @@
 </head>
 
 <body>
-    <div id="mode">
-        🌑
-    </div>
     <header>
         <div class="header-left">
+            <div id="mode">
+                🌑
+            </div>
             <img src="images/winston-salem-logo.png" alt="Winston Salem Logo">
             <h1>Winston Salem<br>Chamber of Commerce</h1>
         </div>
@@ -35,7 +35,7 @@
             <!-- Hamburger Button -->
             <button id="menu"></button>
             <nav class="navigation">
-                <a href="" class="active">Home</a>
+                <a href="https://whisenhunt-robert.github.io/wdd230/chamber/" class="active">Home</a>
                 <a href="">Discover</a>
                 <a href="">Directory</a>
                 <a href="">Join</a>
@@ -44,24 +44,30 @@
     </header>
 
     <main>
-        <div id="main-container">
-            <!--Hero Image goes here.-->
-            <img src="images/winston-salem.png" alt="Hero Image">
-            <!--Call to Action-->
-            <a href="">Join the Chamber</a>
-            <section class="events">
-                <!--Current event(s) section-->
-                <h2>Events Section</h2>
-            </section>
-            <section class="weather">
-                <!--Weather card section-->
-                <h2>Weather Section</h2>
-            </section>
-            <section class="spotlights">
-                <!--Spotlights section-->
-                <h2>Spotlights Section</h2>
-            </section>
-        </div>
+        <!--Hero Image goes here.-->
+        <img src="images/winston-salem.png" alt="Hero Image">
+        <!--Call to Action-->
+        <button onclick="document.location='#'">Join the Chamber</button>
+        <section class="events">
+            <!--Current event(s) section-->
+            <h2>Events Section</h2>
+        </section>
+        <section class="weather">
+            <!--Weather card section-->
+            <h2>Weather Section</h2>
+        </section>
+        <section id="spotlight1">
+            <!--Spotlights section-->
+            <h2>Spotlights Section</h2>
+        </section>
+        <section id="spotlight2">
+            <!--Spotlights section-->
+            <h2>Spotlights Section</h2>
+        </section>
+        <section id="spotlight3">
+            <!--Spotlights section-->
+            <h2>Spotlights Section</h2>
+        </section>
     </main>
 
     <footer>

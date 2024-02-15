@@ -23,7 +23,7 @@
 
 <body>
     <header>
-        <img src="images/profile_photo.jpg" alt="My profile photo.">
+        <img src="images/profile_photo.webp" alt="My profile photo.">
         <h1>Robert Whisenhunt</h1>
     </header>
     <!-- Hamburger Button -->
@@ -36,6 +36,17 @@
         <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
     </nav>
     <main>
+        <!--Hero Image.-->
+        <div class="hero">
+            <picture>
+                <img src="images/dctemple.webp" alt="Hero Image">
+                <source srcset="images/dctemple-small.webp" media="(max-width: 550px)">
+                <source srcset="images/dctemple.webp" media="(max-width: 700px)">
+            </picture>
+            <div class="herolabel">
+                <p>Washington D.C. Temple</p>
+            </div>
+        </div>
         <div id="main-container">
             <h2>WDD 230: Web Frontend Development</h2>
             <hr class="separator">

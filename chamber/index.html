@@ -27,7 +27,10 @@
             <div id="mode">
                 🌑
             </div>
-            <img src="images/winston-salem-logo.png" alt="Winston Salem Logo">
+            <picture>
+                <source srcset="images/winston-salem-logo.webp" media="(max-width: 700px)">
+                <img src="images/winston-salem-logo.webp" alt="Winston Salem Logo">
+            </picture>
             <h1>Winston Salem<br>Chamber of Commerce</h1>
         </div>
         <div class="vertical-line"></div>
@@ -45,9 +48,18 @@
 
     <main>
         <!--Hero Image goes here.-->
-        <img src="images/winston-salem.png" alt="Hero Image">
-        <!--Call to Action-->
-        <button onclick="document.location='#'">Join the Chamber</button>
+        <div class="hero">
+            <picture>
+                <source srcset="images/small-wdd230-org.png" media="(max-width: 550px)">
+                <source srcset="images/medium-wdd230-org.png" media="(max-width: 700px)">
+                <source srcset="images/large-wdd230-org.png" media="(max-width: 1000px)">
+                <img src="images/large-wdd230-org.png" alt="Hero Image">
+            </picture>
+            <!--Call to Action-->
+            <div>
+                <button onclick="document.location='#'">Join the Chamber</button>
+            </div>
+        </div>
         <section class="events">
             <!--Current event(s) section-->
             <h2>Events Section</h2>
@@ -55,6 +67,19 @@
         <section class="weather">
             <!--Weather card section-->
             <h2>Weather Section</h2>
+            <div>
+                Temperature:
+                <span id="temperature">30</span>°F
+            </div>
+            <div>
+                Wind Speed:
+                <span id="windSpeed">5</span>
+                mph
+            </div>
+            <div>
+                Wind Chill:
+                <span id="windChill"></span>°F
+            </div>
         </section>
         <section id="spotlight1">
             <!--Spotlights section-->
@@ -91,6 +116,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>

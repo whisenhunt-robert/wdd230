@@ -1,0 +1,34 @@
+/* @media screen and (min-width:550px) {
+    .hero {
+        margin: auto;
+        position: relative;
+        border: 1px solid rgba(0, 0, 0, .1);
+        height: 300px;
+    }
+
+    .hero img {
+        display: grid;
+        grid-column: 1/4;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .herolabel {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: radial-gradient(#b3bbd4, hsl(221.25deg 15.24% 41.18%));
+        border: 1px solid rgba(0, 0, 0, .75);
+        padding: 0.5rem;
+        box-shadow: 0 0 3rem #fff;
+        opacity: 0.75;
+    }
+
+    .herolabel p {
+        margin: 0;
+        padding: .25rem;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+} */

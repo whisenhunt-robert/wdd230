@@ -105,26 +105,25 @@ main {
 }
 
 main img {
-    height: 80%;
-    width: 80%;
+    height: 90%;
+    width: 90%;
     margin: auto;
     background-color: snow;
     /* display: block; */
     /* border: 2px solid black; */
 }
 
-button {
+main button {
     position: absolute;
     top: 10px;
     left: 120px;
     background: radial-gradient(#fafbfd, hsl(45deg 17.39% 72.94%));
     border: 1px solid rgba(0, 0, 0, .75);
     padding: 0.5rem;
-    box-shadow: 0 0 3rem #fff;
     opacity: 0.75;
 }
 
-button p {
+main button p {
     margin: 0;
     padding: .25rem;
     font-weight: 700;

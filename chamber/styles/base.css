@@ -105,8 +105,9 @@ main {
 }
 
 main img {
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     margin: auto;
     background-color: snow;
     /* display: block; */

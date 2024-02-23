@@ -138,3 +138,11 @@ main button p {
     font-size: 1.5rem;
     cursor: pointer;
 }
+
+/*Make image larger on hover over*/
+.img-scale:hover {
+    transform: scale(1.25);
+    /* 1.25 means 125% of the original size, i.e., 25% larger */
+    transition: transform 0.3s ease;
+    /* Optional: for smooth scaling */
+}

@@ -107,12 +107,15 @@
     margin-top: 10px;
 }
 
-/*Make image larger on hover over*/
-.hover:hover {
-    transform: scale(1.15);
-    /* 1.25 means 125% of the original size, i.e., 25% larger */
-    transition: transform 0.3s ease;
-    /* Optional: for smooth scaling */
+@media (min-width: 551px) {
+
+    /*Make image larger on hover over*/
+    .hover:hover {
+        transform: scale(1.15);
+        /* 1.25 means 125% of the original size, i.e., 25% larger */
+        transition: transform 0.3s ease;
+        /* Optional: for smooth scaling */
+    }
 }
 
 @media (max-width: 550px) {

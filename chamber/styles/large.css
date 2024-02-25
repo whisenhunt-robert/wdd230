@@ -85,25 +85,26 @@
 
 #container-discover {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     /* Two columns for larger screens */
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     padding: 20px;
 }
 
 .place {
     grid-column: 1;
-    text-align: left;
+    text-align: center;
+    margin: auto 10px;
     border: 2px solid #000;
     padding: 10px;
 }
 
 #container-discover img {
     grid-column: 2;
-    max-width: 100%;
     /* Make sure the image doesn't exceed its container */
-    height: auto;
+    max-width: 100%;
     /* Maintain aspect ratio */
+    height: auto;
     margin-top: 10px;
 }
 
@@ -111,10 +112,10 @@
 
     /*Make image larger on hover over*/
     .hover:hover {
+        /* 1.25 means 125% of the original size (i.e. 25% larger) */
         transform: scale(1.15);
-        /* 1.25 means 125% of the original size, i.e., 25% larger */
+        /* Optional for smooth scaling */
         transition: transform 0.3s ease;
-        /* Optional: for smooth scaling */
     }
 }
 
@@ -123,7 +124,7 @@
     /* For screens 550px and below, switch to a single column layout */
     #container-discover {
         display: block;
+        /* Makes the grid a single column in mobile view */
         grid-template-columns: 1fr;
-        /* Single column */
     }
 }

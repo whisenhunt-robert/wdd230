@@ -41,13 +41,13 @@
         justify-content: space-evenly;
     }
 
-    main {
+    #container-home {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
 
-    main .hero {
+    #container-home .hero {
         grid-column: 1/4;
         height: 300px;
         width: 100%;
@@ -78,5 +78,49 @@
 
     .stuff {
         margin: 1rem auto;
+    }
+}
+
+/* Discover Page CSS */
+
+#container-discover {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two columns for larger screens */
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.place {
+    grid-column: 1;
+    text-align: left;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+#container-discover img {
+    grid-column: 2;
+    max-width: 100%;
+    /* Make sure the image doesn't exceed its container */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-top: 10px;
+}
+
+/*Make image larger on hover over*/
+.hover:hover {
+    transform: scale(1.15);
+    /* 1.25 means 125% of the original size, i.e., 25% larger */
+    transition: transform 0.3s ease;
+    /* Optional: for smooth scaling */
+}
+
+@media (max-width: 550px) {
+
+    /* For screens 550px and below, switch to a single column layout */
+    #container-discover {
+        display: block;
+        grid-template-columns: 1fr;
+        /* Single column */
     }
 }

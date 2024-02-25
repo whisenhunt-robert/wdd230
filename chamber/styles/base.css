@@ -89,7 +89,7 @@ nav a {
     display: block;
 }
 
-main {
+#container-home {
     display: grid;
     grid-template-columns: 1fr;
     margin: auto;
@@ -104,7 +104,7 @@ main {
     position: relative;
 }
 
-main img {
+#container-home img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -114,7 +114,7 @@ main img {
     /* border: 2px solid black; */
 }
 
-main button {
+#container-home button {
     position: absolute;
     top: 10px;
     left: 120px;
@@ -124,7 +124,7 @@ main button {
     opacity: 0.75;
 }
 
-main button p {
+#container-home button p {
     margin: 0;
     padding: .25rem;
     font-weight: 700;

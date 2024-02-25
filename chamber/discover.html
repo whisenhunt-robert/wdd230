@@ -38,8 +38,8 @@
             <!-- Hamburger Button -->
             <button id="menu"></button>
             <nav class="navigation">
-                <a href="https://whisenhunt-robert.github.io/wdd230/chamber/" class="active">Home</a>
-                <a href="https://whisenhunt-robert.github.io/wdd230/chamber/discover/">Discover</a>
+                <a href="https://whisenhunt-robert.github.io/wdd230/chamber/">Home</a>
+                <a href="https://whisenhunt-robert.github.io/wdd230/chamber/discover.html" class="active">Discover</a>
                 <a href="">Directory</a>
                 <a href="">Join</a>
             </nav>
@@ -47,53 +47,45 @@
     </header>
 
     <main>
-        <div id="container-home">
-            <!--Hero Image goes here.-->
-            <div class="hero">
-                <picture>
-                    <source srcset="images/small-winston-salem.png" media="(max-width: 550px)">
-                    <source srcset="images/medium-winston-salem.png" media="(max-width: 700px)">
-                    <source srcset="images/large-winston-salem.png" media="(max-width: 1000px)">
-                    <img src="images/large-winston-salem.png" alt="Hero Image">
-                </picture>
-                <!--Call to Action-->
-                <div>
-                    <button onclick="document.location='#'">Join the Chamber</button>
+        <div id="container-discover">
+            <div class="place">
+                <h2>Downtown</h2>
+                <p>Tour through Downtown as it offers many buildings to explore, including a library!</p>
+            </div>
+            <img class="hover" src="./images/downtown.jpg" alt="Picture of Downtown Winston Salem, NC." loading="lazy">
+            <div class="place">
+                <h2>Salem Lake</h2>
+                <p>Enjoy a variety of things that this place offers.</p>
+            </div>
+            <img class="hover" src="./images/salem-lake.jpeg" alt="Picture of Salem Lake, NC." loading="lazy">
+            <div class="place">
+                <h2>Old Salem</h2>
+                <p>Tour through museums and gardens.</p>
+            </div>
+            <img class="hover" src="./images/old-salem.jpg" alt="Picture of Old Salem, NC." loading="lazy">
+            <div class="place">
+                <h2>Reynolda House</h2>
+                <p>Tour this Museum of American Art.</p>
+            </div>
+            <img class="hover" src="./images/reynolda-house.jpg"
+                alt="Picture of Reynolda House Museum of American Art in Winston Salem, NC." loading="lazy">
+            <div class="place">
+                <h2>Hanes Mall</h2>
+                <p>Browse the many stores this mall has to offer and grab a bite to eat at the food court.</p>
+            </div>
+            <img class="hover" src="./images/hanes-mall.jpg" alt="Picture of Hanes Mall in Winston Salem, NC."
+                loading="lazy">
+            <div class="place">
+                <h2>Wake Forest University</h2>
+                <p>One of the four popular universities in the state of North Carolina.</p>
+            </div>
+            <img class="hover" src="./images/wake-forest-u.jpg"
+                alt="Picture of Wake Forest University in Winston Salem, NC." loading="lazy">
+            <div class="place">
+                <div class="sidebar" id="sidebar">
+                    <!-- Sidebar content will be dynamically updated by JavaScript -->
                 </div>
             </div>
-            <section class="events">
-                <!--Current event(s) section-->
-                <h2>Events Section</h2>
-            </section>
-            <section class="weather">
-                <!--Weather card section-->
-                <h2>Weather Section</h2>
-                <div>
-                    Temperature:
-                    <span id="temperature">30</span>°F
-                </div>
-                <div>
-                    Wind Speed:
-                    <span id="windSpeed">5</span>
-                    mph
-                </div>
-                <div>
-                    Wind Chill:
-                    <span id="windChill"></span>°F
-                </div>
-            </section>
-            <section id="spotlight1">
-                <!--Spotlights section-->
-                <h2>Spotlights Section</h2>
-            </section>
-            <section id="spotlight2">
-                <!--Spotlights section-->
-                <h2>Spotlights Section</h2>
-            </section>
-            <section id="spotlight3">
-                <!--Spotlights section-->
-                <h2>Spotlights Section</h2>
-            </section>
         </div>
     </main>
 
@@ -118,7 +110,6 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>

@@ -41,13 +41,13 @@
         justify-content: space-evenly;
     }
 
-    main {
+    #container-home {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
 
-    main .hero {
+    #container-home .hero {
         grid-column: 1/4;
         height: 200px;
         width: 90%;

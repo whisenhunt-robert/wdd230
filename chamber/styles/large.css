@@ -94,7 +94,7 @@
 .place {
     grid-column: 1;
     text-align: left;
-    border: 1px solid #000;
+    border: 2px solid #000;
     padding: 10px;
 }
 

@@ -37,17 +37,21 @@
         <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
     </nav>
     <main>
-        <form>
-            <label for="userName" title="Please enter your username.">Username:
+        <form method="get" action="record.html" class="feedback">
+            <label for="userName" title="Please enter your username.">
+                *Username:
                 <input type="text" id="userName" name="username" required>
             </label><br>
-            <label for="password" title="Please enter your password.">Password:
+            <label for="password" title="Please enter your password.">
+                *Password:
                 <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" required>
             </label><br>
-            <label for="password" title="Please re-enter your password.">Re-enter Password:
+            <label for="password" title="Please re-enter your password.">
+                *Re-enter Password:
                 <input type="password" id="rePassword" name="rePassword" required>
             </label><br>
-            <label for="email" title="Please enter your e-mail.">E-mail:
+            <label for="email" title="Please enter your e-mail.">
+                *E-mail:
                 <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" required>
             </label><br>
             <div id="rangeValue"></div>
@@ -79,6 +83,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/visits.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 
 </html>

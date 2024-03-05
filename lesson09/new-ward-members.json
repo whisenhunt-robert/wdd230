@@ -1,0 +1,30 @@
+{
+    "newMember": {
+        "familyName": "Webbers",
+        "moveInDate": "03-04-2024",
+        "householdNumber": 4,
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Henry Webber",
+                "gender": "Male",
+                "birthdate": "09-09-1999"
+            },
+            {
+                "name": "Tucker Webber",
+                "gender": "Male",
+                "birthdate": "09-09-1999"
+            },
+            {
+                "name": "Mason Webber",
+                "gender": "Male",
+                "birthdate": "09-09-1999"
+            },
+            {
+                "name": "Leeroy Webber",
+                "gender": "Male",
+                "birthdate": "09-09-1999"
+            }
+        ]
+    }
+}

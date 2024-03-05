@@ -37,7 +37,7 @@
         <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
     </nav>
     <main>
-        <form method="get" action="record.html" class="feedback">
+        <form method="get" action="record.html" class="feedback" onsubmit="return validateForm()">
             <label for="userName" title="Please enter your username.">
                 *Username:
                 <input type="text" id="userName" name="username" required>
@@ -50,6 +50,7 @@
                 *Re-enter Password:
                 <input type="password" id="rePassword" name="rePassword" required>
             </label><br>
+            <span id="errorMessage" class="error-message"></span>
             <label for="email" title="Please enter your e-mail.">
                 *E-mail:
                 <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" required>

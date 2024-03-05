@@ -40,11 +40,13 @@
 }
 
 .feedback input:required {
-    border-left: #ff0000;
+    border-left-color: #ff0000;
+    border-left-width: thick;
 }
 
 .feedback input:required:valid {
-    border-left: green;
+    border-left-color: green;
+    border-left-width: thick;
 }
 
 /* Style for the paragraph on the record page */

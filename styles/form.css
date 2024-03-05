@@ -1,3 +1,9 @@
+:root {
+    --background-color: #eee;
+    --border-radius: 6px;
+    --border-left-width: thick;
+}
+
 .feedback {
     padding: 5px;
 }
@@ -12,10 +18,10 @@
 .feedback input[type="text"],
 .feedback input[type="password"],
 .feedback input[type="email"] {
-    background-color: #eee;
+    background-color: var(--background-color);
     display: block;
     border: solid 1px #999;
-    border-radius: 6px;
+    border-radius: var(--border-radius);
     padding: .75rem;
     color: #555;
     width: 100%;
@@ -31,7 +37,7 @@
     border: none;
     background-image: linear-gradient(darkred, rgb(117, 0, 0));
     color: #fff;
-    border-radius: 6px;
+    border-radius: var(--border-radius);
     padding: .8rem;
     width: 96%;
     max-width: 400px;
@@ -41,12 +47,12 @@
 
 .feedback input:required {
     border-left-color: #ff0000;
-    border-left-width: thick;
+    border-left-width: var(--border-left-width);
 }
 
 .feedback input:required:valid {
     border-left-color: green;
-    border-left-width: thick;
+    border-left-width: var(--border-left-width);
 }
 
 /* Style for the paragraph on the record page */

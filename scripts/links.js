@@ -10,29 +10,28 @@ async function getLinks() {
 
 function displayLinks(data) {
     let allLessons = data.lessons;
-    const line = document.createElement('li');
-    const pizza = ''
-    allLessons.forEach(function(allLessons) {
-        let lessonNum = allLessons.lesson;
-        let lessonUrl = allLessons.links;
-        lessonUrl.forEach(function(lessonsUrl){
+    allLessons.forEach(function(lesson) {
+        let lessonNum = lesson.lesson;
+        let lessonUrl = lesson.links;
+        lessonUrl.forEach(function(lessonsUrl) {
             let url = lessonsUrl.url;
             let title = lessonsUrl.title;
+
             // Create new HTML elements for each link
             const listItem = document.createElement('li');
             const anchor = document.createElement('a');
-            anchor.textContent = lessonNum;
             anchor.href = url;
             anchor.textContent = title;
-            listItem.innerHTML = `lesson ${lessonNum} assignment <a href="${url}">${title}</a>`;
+
             // Append the anchor element to the list item
-            // listItem.appendChild(anchor);
+            listItem.appendChild(anchor);
 
             // Append the list item to the output div
             output.appendChild(listItem);
-        })
-    })
+
+            listItem.innerHTML = `lesson ${lessonNum}: <a href="${url}">${title}</a>`;
+        });
+    });
 }
 
 getLinks();
-displayLinks();

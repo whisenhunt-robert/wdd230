@@ -10,27 +10,37 @@ async function getLinks() {
 
 function displayLinks(data) {
     let allLessons = data.lessons;
+
     allLessons.forEach(function(lesson) {
         let lessonNum = lesson.lesson;
-        let lessonUrl = lesson.links;
-        lessonUrl.forEach(function(lessonsUrl) {
-            let url = lessonsUrl.url;
-            let title = lessonsUrl.title;
+        let lessonLinks = lesson.links;
+
+        // Create new HTML elements for each lesson
+        const listItem = document.createElement('li');
+        const anchorLesson = document.createElement('span'); // Change 'a' to 'span'
+        anchorLesson.textContent = `Week ${lessonNum}: `;
+        listItem.appendChild(anchorLesson);
+
+        lessonLinks.forEach(function(link, index) {
+            let url = link.url;
+            let title = link.title;
 
             // Create new HTML elements for each link
-            const listItem = document.createElement('li');
-            const anchor = document.createElement('a');
-            anchor.href = url;
-            anchor.textContent = title;
+            const anchorLink = document.createElement('a');
+            anchorLink.href = url;
+            anchorLink.textContent = title;
 
-            // Append the anchor element to the list item
-            listItem.appendChild(anchor);
+            // Append the link anchor element to the list item
+            listItem.appendChild(anchorLink);
 
-            // Append the list item to the output div
-            output.appendChild(listItem);
-
-            listItem.innerHTML = `lesson ${lessonNum}: <a href="${url}">${title}</a>`;
+            // Add a separator between links (except for the first link)
+            if (index < lessonLinks.length - 1) {
+                listItem.appendChild(document.createTextNode(' | '));
+            }
         });
+
+        // Append the list item to the output div
+        output.appendChild(listItem);
     });
 }
 

@@ -21,11 +21,12 @@ function displayLinks(data) {
             // Create new HTML elements for each link
             const listItem = document.createElement('li');
             const anchor = document.createElement('a');
+            anchor.textContent = lessonNum;
             anchor.href = url;
             anchor.textContent = title;
-
+            listItem.innerHTML = `lesson ${lessonNum} assignment <a href="${url}">${title}</a>`;
             // Append the anchor element to the list item
-            listItem.appendChild(anchor);
+            // listItem.appendChild(anchor);
 
             // Append the list item to the output div
             output.appendChild(listItem);

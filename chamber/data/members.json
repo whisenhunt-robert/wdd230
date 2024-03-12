@@ -45,20 +45,20 @@
         "otherInfo": "This place often hosts events for you to enjoy."
     },
     {
-        "name": "Willian G. White, Jr. Family YMCA",
-        "address": "775 W End Blvd, Winston-Salem, NC 27101",
-        "phone": "(336) 721-2100",
-        "website": "https://ymcanwnc.org/locations/william-g-white-jr-family-ymca",
-        "image": "https://ymcanwnc.org/themes/custom/ynwc_carnation/dist/images/logo.svg",
+        "name": "Forsyth Technical Community College",
+        "address": "2100 Silas Creek Parkway, Winston-Salem, NC 27103",
+        "phone": "(336) 734-7200",
+        "website": "https://www.forsythtech.edu/",
+        "image": "https://www.forsythtech.edu/wp-content/uploads/2023/06/BlazeAmon-11.jpg",
         "membershipLevel": "Gold",
-        "otherInfo": "There are many fitness opportunities here."
+        "otherInfo": "They offer GEDs here for those who didn't finish High School."
     },
     {
         "name": "Wake Forest University",
         "address": "PO Box 7226, Winston-Salem, NC 27109",
         "phone": "(336) 758-5000",
         "website": "https://www.wfu.edu/",
-        "image": "https://static.secure.wfu.edu/images/_heater/wfu-logo.svg",
+        "image": "https://prod.wp.cdn.aws.wfu.edu/sites/203/2022/06/expwf-athletics.jpg",
         "membershipLevel": "Gold",
         "otherInfo": "Many students come here to learn."
     }

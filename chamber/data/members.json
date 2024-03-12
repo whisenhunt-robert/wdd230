@@ -1,12 +1,12 @@
 [
     {
-        "name": "1",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "image": "",
-        "membershipLevel": "",
-        "otherInfo": ""
+        "name": "Atrium Health Wake Forest Baptist Hospital",
+        "address": "Medical Center Boulevard, Winston-Salem, NC 27157",
+        "phone": "(336) 716-2011",
+        "website": "https://www.wakehealth.edu/",
+        "image": "https://cdn.atriumhealth.org/-/media/wakeforest/clinical/images/logos-and-signatures/header-logo.png?rev=d9a290ded17d487cb53a73fff72ef325",
+        "membershipLevel": "Gold",
+        "otherInfo": "This hospital is at the center of the city."
     },
     {
         "name": "2",

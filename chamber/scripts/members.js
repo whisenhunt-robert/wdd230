@@ -1,37 +1,55 @@
-const url = 'https://whisenhunt-robert.github.io/wdd230/chamber/members.json';
-const cards = document.querySelector('#cards');
+// Fetch JSON data
+fetch('https://whisenhunt-robert.github.io/wdd230/chamber/data/members.json')
+.then(response => response.json())
+.then(data => {
+  // Process and display data
+  displayCompanyInformation(data);
+})
+.catch(error => console.error('Error fetching JSON:', error));
 
-async function getProphetData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    // console.table(data.prophets);
-    displayProphets(data.prophets);
-  }
+function displayCompanyInformation(companies) {
+// Get the div where we will display company information
+const companyListDiv = document.getElementById('companyList');
 
-  getProphetData();
+// Iterate through each company in the JSON data
+companies.forEach(company => {
+  // Create a div to hold the information for each company
+  const companyDiv = document.createElement('div');
+  companyDiv.classList.add('company');
 
-  const displayProphets = (prophets) => {
-    prophets.forEach((prophet) => {
-        let card = document.createElement('section');
-        let fullName = document.createElement('h2');
-        let portrait = document.createElement('img');
+  // Create HTML elements for each piece of information
+  const nameElement = document.createElement('h1');
+  nameElement.textContent = company.name;
 
-        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
-        portrait.setAttribute('src', prophet.imageurl);
-        portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
-        portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '340');
-        portrait.setAttribute('height', '440');
+  const addressElement = document.createElement('p');
+  addressElement.textContent = `Address: ${company.address}`;
 
-        // Append the section(card) with the created elements
-        card.appendChild(fullName);
-        
-        let birthInformation = document.createElement("p")
-        birthInformation.innerHTML=`Date of Birth: ${prophet.birthdate} <br> Place of Birth: ${prophet.birthplace} `;
+  const phoneElement = document.createElement('p');
+  phoneElement.textContent = `Phone: ${company.phone}`;
 
-        card.appendChild(birthInformation);
-        card.appendChild(portrait);
-        cards.appendChild(card);
+  const websiteElement = document.createElement('p');
+  websiteElement.innerHTML = `Website: <a href="${company.website}" target="_blank">${company.website}</a>`;
 
-    })
-  }
+  const imageElement = document.createElement('img');
+  imageElement.src = company.image;
+  imageElement.alt = `${company.name} Logo`;
+
+  const membershipElement = document.createElement('p');
+  membershipElement.textContent = `Membership Level: ${company.membershipLevel}`;
+
+  const otherInfoElement = document.createElement('p');
+  otherInfoElement.textContent = `Other Information: ${company.otherInfo || 'N/A'}`;
+
+  // Append the elements to the companyDiv
+  companyDiv.appendChild(nameElement);
+  companyDiv.appendChild(addressElement);
+  companyDiv.appendChild(phoneElement);
+  companyDiv.appendChild(websiteElement);
+  companyDiv.appendChild(imageElement);
+  companyDiv.appendChild(membershipElement);
+  companyDiv.appendChild(otherInfoElement);
+
+  // Append the companyDiv to the companyListDiv
+  companyListDiv.appendChild(companyDiv);
+});
+}

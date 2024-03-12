@@ -107,6 +107,17 @@
     margin-top: 10px;
 }
 
+/* Directory Page CSS */
+#companyList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 1px;
+    border: 1px solid black;
+    flex-direction: column;
+    text-align: center;
+}
+
+
 /* Join Page CSS */
 @media screen and (min-width: 700px) {
     #joinPage {

@@ -38,16 +38,105 @@
             <!-- Hamburger Button -->
             <button id="menu"></button>
             <nav class="navigation">
-                <a href="https://whisenhunt-robert.github.io/wdd230/chamber/" class="active">Home</a>
+                <a href="https://whisenhunt-robert.github.io/wdd230/chamber/">Home</a>
                 <a href="https://whisenhunt-robert.github.io/wdd230/chamber/discover.html">Discover</a>
                 <a href="">Directory</a>
-                <a href="">Join</a>
+                <a href="https://whisenhunt-robert.github.io/wdd230/chamber/join.html" class="active">Join</a>
             </nav>
         </div>
     </header>
 
-    <main>
-
+    <main id="joinPage">
+        <div id="joinLeft">
+            <h2>Applicant Information</h2>
+            <form method="get" action="thankyou.html" class="joinForm">
+                <label for="firstName" title="Please enter your first name.">
+                    *First Name:
+                    <input type="text" id="firstName" name="firstname" required>
+                </label>
+                <label for="lastName" title="Please enter your last name.">
+                    *Last Name:
+                    <input type="text" id="lastName" name="lastname" required>
+                </label>
+                <label for="titlePos" title="Please enter your title or position.">
+                    *Title/Position:
+                    <input type="text" id="titlePos" name="titlePos" pattern="[A-Za-z -]{7,}"
+                        title="Please enter at least seven characters, including only letters, hyphens, and spaced."
+                        required>
+                </label>
+                <label for="email" title="Please enter your e-mail.">
+                    *E-mail:
+                    <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" required>
+                </label>
+                <label for="phoneNum" title="Please enter your phone number.">
+                    *Phone Number:
+                    <input type="tel" id="phoneNum" name="phoneNum" required>
+                </label>
+                <label for="businessName" title="Please enter the name of the business or organization.">
+                    *Business/Organization Name:
+                    <input type="text" id="businessName" name="businessName" required>
+                </label>
+                <label for="membershipLevel" title="Please select a membership option.">
+                    *Membership Level:
+                </label>
+                <select id="membershipLevel" name="membershipLevel" required>
+                    <option value="" disabled selected>Select a membership level</option>
+                    <option value="non-profit">Non Profit</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+                <label for="businessDesc" title="Please type a description about the business.">
+                    Business/Oganization's description:
+                </label>
+                <textarea title="Describe the business or organization." id="businessDesc" name="businessDescription"
+                    rows="4" cols="45"
+                    placeholder="Please enter a brief description about the business or organization.">
+                    </textarea>
+                <!-- Hidden input for current date/time -->
+                <input type="hidden" name="formLoadTime" id="formLoadTime">
+                <input type="submit" value="Send Application" class="submitButton">
+            </form>
+        </div>
+        <div id="joinRight">
+            <h2>Membership Plan Information</h2>
+            <section class="non-profit-membership">
+                <h3>Non Profit Membership</h3>
+                <p>Free</p>
+                <ul>
+                    <li>To</li>
+                    <li>be</li>
+                    <li>determined</li>
+                </ul>
+            </section>
+            <section class="bronze-membership">
+                <h3>Bronze Membership</h3>
+                <p>$250</p>
+                <ul>
+                    <li>To</li>
+                    <li>be</li>
+                    <li>determined</li>
+                </ul>
+            </section>
+            <section class="silver-membership">
+                <h3>Silver Membership</h3>
+                <p>$500</p>
+                <ul>
+                    <li>To</li>
+                    <li>be</li>
+                    <li>determined</li>
+                </ul>
+            </section>
+            <section class="gold-membership">
+                <h3>Gold Membership</h3>
+                <p>$1,000</p>
+                <ul>
+                    <li>To</li>
+                    <li>be</li>
+                    <li>determined</li>
+                </ul>
+            </section>
+        </div>
     </main>
 
     <footer>
@@ -72,6 +161,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/join.js"></script>
 </body>
 
 </html>

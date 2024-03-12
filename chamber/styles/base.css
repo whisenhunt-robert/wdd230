@@ -137,3 +137,10 @@ nav a {
     font-size: 1.5rem;
     cursor: pointer;
 }
+
+/* Styles for the thankyou page. */
+#thankyouPage {
+    margin: auto;
+    text-align: center;
+    padding: 3rem;
+}

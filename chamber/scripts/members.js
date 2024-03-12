@@ -1,9 +1,13 @@
+let currentView = 'list'; // Default view
+
 // Fetch JSON data
 fetch('https://whisenhunt-robert.github.io/wdd230/chamber/data/members.json')
 .then(response => response.json())
 .then(data => {
   // Process and display data
   displayCompanyInformation(data);
+  // Set the initial view
+  toggleView(currentView);
 })
 .catch(error => console.error('Error fetching JSON:', error));
 
@@ -18,7 +22,7 @@ companies.forEach(company => {
   companyDiv.classList.add('company');
 
   // Create HTML elements for each piece of information
-  const nameElement = document.createElement('h1');
+  const nameElement = document.createElement('h2');
   nameElement.textContent = company.name;
 
   const addressElement = document.createElement('p');
@@ -52,4 +56,15 @@ companies.forEach(company => {
   // Append the companyDiv to the companyListDiv
   companyListDiv.appendChild(companyDiv);
 });
+}
+
+function toggleView(view) {
+    const companyListDiv = document.getElementById('companyList');
+    currentView = view;
+
+    if (view === 'grid') {
+      companyListDiv.classList.add('grid-view');
+    } else {
+      companyListDiv.classList.remove('grid-view');
+    }
 }

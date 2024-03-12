@@ -9,22 +9,22 @@
         "otherInfo": "This hospital is at the center of the city."
     },
     {
-        "name": "2",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "image": "",
-        "membershipLevel": "",
-        "otherInfo": ""
+        "name": "Reynolda House Museum of American Art",
+        "address": "P.O. Box 7287, Winston-Salem, NC 27109",
+        "phone": "(336) 758-5150",
+        "website": "https://reynolda.org/",
+        "image": "https://reynolda.org/wp-content/themes/reynolda/assets/images/svg/reynolda-house.svg",
+        "membershipLevel": "Gold",
+        "otherInfo": "There is so much to explore here at the Reynolda House Museum."
     },
     {
-        "name": "3",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "image": "",
-        "membershipLevel": "",
-        "otherInfo": ""
+        "name": "Old Salem Museums and Gardens",
+        "address": "600 South Main Street, Winston-Salem, NC 27101",
+        "phone": "(336) 721-7300",
+        "website": "https://www.oldsalem.org/",
+        "image": "https://www.oldsalem.org/wp-content/themes/osmg/images/OldSalemLogo.svg",
+        "membershipLevel": "Gold",
+        "otherInfo": "Many historic things to discover here."
     },
     {
         "name": "4",

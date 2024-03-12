@@ -109,12 +109,33 @@
 
 /* Directory Page CSS */
 #companyList {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 1px;
     border: 1px solid black;
     flex-direction: column;
     text-align: center;
+}
+
+.company {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.company img {
+    max-width: 90%;
+    height: auto;
+}
+
+/* Additional styles for grid view */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+#viewOptions {
+    margin: 7px;
+    padding: 1px;
 }
 
 

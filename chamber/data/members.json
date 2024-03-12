@@ -27,39 +27,39 @@
         "otherInfo": "Many historic things to discover here."
     },
     {
-        "name": "4",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "image": "",
-        "membershipLevel": "",
-        "otherInfo": ""
+        "name": "Winston-Salem Marriott",
+        "address": "425 North Cherry Street, Winston-Salem, NC 27101",
+        "phone": "(336) 397-3611",
+        "website": "https://twincityquarter.com/",
+        "image": "https://twincityquarter.com/wp-content/uploads/2024/01/marriott-benton-logo.png",
+        "membershipLevel": "Silver",
+        "otherInfo": "This hotel is in downtown Winston Salem for those who wish to stay a night in the city."
     },
     {
-        "name": "5",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "image": "",
-        "membershipLevel": "",
-        "otherInfo": ""
+        "name": "Forsyth Country Club",
+        "address": "3101 Country Club Road, Winston-Salem, NC 27104",
+        "phone": "(336) 780-0220",
+        "website": "https://www.forsythcc.org/",
+        "image": "https://www.forsythcc.org/images/dynamic/getImage.gif?ID=102691",
+        "membershipLevel": "Bronze",
+        "otherInfo": "This place often hosts events for you to enjoy."
     },
     {
-        "name": "6",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "image": "",
-        "membershipLevel": "",
-        "otherInfo": ""
+        "name": "Willian G. White, Jr. Family YMCA",
+        "address": "775 W End Blvd, Winston-Salem, NC 27101",
+        "phone": "(336) 721-2100",
+        "website": "https://ymcanwnc.org/locations/william-g-white-jr-family-ymca",
+        "image": "https://ymcanwnc.org/themes/custom/ynwc_carnation/dist/images/logo.svg",
+        "membershipLevel": "Gold",
+        "otherInfo": "There are many fitness opportunities here."
     },
     {
-        "name": "7",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "image": "",
-        "membershipLevel": "",
-        "otherInfo": ""
+        "name": "Wake Forest University",
+        "address": "PO Box 7226, Winston-Salem, NC 27109",
+        "phone": "(336) 758-5000",
+        "website": "https://www.wfu.edu/",
+        "image": "https://static.secure.wfu.edu/images/_heater/wfu-logo.svg",
+        "membershipLevel": "Gold",
+        "otherInfo": "Many students come here to learn."
     }
 ]

@@ -125,6 +125,7 @@
 .company img {
     max-width: 90%;
     height: auto;
+    width: 250px;
 }
 
 /* Additional styles for grid view */

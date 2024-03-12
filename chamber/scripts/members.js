@@ -1,4 +1,4 @@
-let currentView = 'list'; // Default view
+let currentView = 'grid'; // Default view
 
 // Fetch JSON data
 fetch('https://whisenhunt-robert.github.io/wdd230/chamber/data/members.json')

@@ -178,16 +178,12 @@ footer {
     border: 2px solid black;
 }
 
-#weather-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+#info {
     text-align: center;
 }
 
-#weather-details {
-    margin-bottom: 10px;
+#visits {
+    padding-bottom: 10px;
 }
 
 #map-container {

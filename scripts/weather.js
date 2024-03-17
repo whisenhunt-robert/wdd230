@@ -14,8 +14,5 @@ fetch(apiUrl)
         // Update HTML elements with weather data
         document.getElementById('temperature').textContent = `${temperatureFahrenheit}°F (${temperatureCelsius.toFixed(2)}°C) - ${data.weather[0].description}`;
         document.getElementById('weather-icon').src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
-    })
-    .catch(error => {
-        console.log('Error fetching weather data:', error);
     });
 

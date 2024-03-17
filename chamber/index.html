@@ -68,9 +68,15 @@
             <section class="weather">
                 <!--Weather card section-->
                 <h2>Weather Section</h2>
-                <div>
-                    Temperature:
-                    <span id="temperature">30</span>°F
+                <div id="weather-info">
+                    <div id="weather-details">
+                        <p id="temperature"></p>
+                    </div>
+                    <img id="weather-icon" src="weather.js" alt="Weather Icon">
+                    <div id="forecast">
+                        <h3>5-Day Forecast</h3>
+                        <ul id="forecast-list"></ul>
+                    </div>
                 </div>
                 <div>
                     Wind Speed:
@@ -119,6 +125,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>

@@ -225,6 +225,36 @@ hr.event-separator {
     height: auto;
 }
 
+#spotlights {
+    margin: auto;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+    max-width: 90%;
+    height: auto;
+}
+
+/* Define styles for spotlight sections */
+.spotlight-section {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Define grid layout for spotlight sections */
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+/* Adjust layout for mobile devices */
+@media (max-width: 550px) {
+    .spotlight-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Styles for the thankyou page. */
 #thankyouPage {
     margin: auto;

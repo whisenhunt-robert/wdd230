@@ -91,6 +91,27 @@
         display: block;
     }
 
+    /* Define styles for spotlight sections */
+    .spotlight-section {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    /* Define grid layout for spotlight sections */
+    .spotlight-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    /* Adjust layout for mobile devices */
+    @media (max-width: 550px) {
+        .spotlight-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
     .events {
         grid-column: 1/3;
     }

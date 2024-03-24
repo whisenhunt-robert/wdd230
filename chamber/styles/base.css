@@ -71,7 +71,6 @@ nav a {
     display: flex;
     flex-direction: column;
     list-style: none;
-    color: snow;
 }
 
 .navigation a {
@@ -140,10 +139,10 @@ nav a {
 }
 
 #mode {
-    position: absolute;
     top: 1rem;
     left: 1rem;
     padding: 1px;
+    margin: 3px;
     font-size: 1.5rem;
     cursor: pointer;
 }

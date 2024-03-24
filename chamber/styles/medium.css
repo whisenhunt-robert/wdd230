@@ -5,40 +5,67 @@
 
     header {
         display: flex;
-        /* justify-content: space-evenly; */
-        justify-content: space-between;
         align-items: center;
-        padding: 5px;
+        justify-content: space-between;
+        background-color: #3f2894;
+        color: #fffafa;
+        padding: 10px 20px;
+        border: 2px solid #000000;
+        position: relative;
     }
 
+    /* Left section of the header */
     .header-left {
         display: flex;
+        align-items: center;
     }
 
+    /* Dark mode button */
     #mode {
-        position: relative;
-        top: 0rem;
-        left: 0rem;
         font-size: 1.5rem;
         cursor: pointer;
     }
 
+    /* Logo and chamber name */
+    .header-left img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .header-left h1 {
+        margin-left: 10px;
+    }
+
+    /* Vertical line separator */
     .vertical-line {
-        display: block;
-        width: 2px;
+        border-left: 2px solid #000;
         height: 100px;
-        background-color: #000;
         margin: 0 20px;
+        display: block;
     }
 
     .header-right {
         display: flex;
+        margin: auto;
     }
 
-    nav {
-        display: flex;
-        flex-direction: row !important;
-        justify-content: space-evenly;
+    /* Navigation menu */
+    .navigation {
+        flex-direction: row;
+        list-style: none;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        color: snow;
+        padding: 20px;
+        text-align: center;
+        display: block;
+    }
+
+    /* Active page indicator */
+    .active::before {
+        content: "👉";
     }
 
     #container-home {
@@ -65,18 +92,6 @@
     #menu {
         display: none;
         /* hide hamburger button */
-    }
-
-    .navigation {
-        flex-direction: row;
-    }
-
-    .navigation a {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        margin: auto;
-        display: block;
     }
 
     .stuff {

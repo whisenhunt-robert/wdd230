@@ -210,6 +210,21 @@ hr.event-separator {
     width: 50%;
 }
 
+.social-icons {
+    text-align: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    background-color: white;
+    height: auto;
+}
+
 /* Styles for the thankyou page. */
 #thankyouPage {
     margin: auto;

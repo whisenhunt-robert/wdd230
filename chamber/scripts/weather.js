@@ -33,6 +33,6 @@ fetch(apiUrl)
                     const listItem = document.createElement('li');
                     listItem.textContent = `${forecastDate.toDateString()}: ${forecastDescription}, ${forecastTemperature}°F`;
                     forecastList.appendChild(listItem);
-                }
-            })
-        });
+        }
+    })
+});

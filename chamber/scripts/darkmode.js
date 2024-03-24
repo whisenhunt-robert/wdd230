@@ -4,7 +4,7 @@ const header = document.querySelector("header");
 const footer = document.querySelector("footer");
 
 modeButton.addEventListener("click", () => {
-	if (modeButton.textContent.includes("🌑")) {
+	if (modeButton.textContent.includes("🌒")) {
 		body.style.background = "#000";
 		body.style.color = "#fff";
         header.style.background = "#323232";
@@ -19,6 +19,6 @@ modeButton.addEventListener("click", () => {
         header.style.color = "#fffafa";
         footer.style.background = "#3f2894";
 		footer.style.color = "#fffafa";
-		modeButton.textContent = "🌑";
+		modeButton.textContent = "🌒";
 	}
 });

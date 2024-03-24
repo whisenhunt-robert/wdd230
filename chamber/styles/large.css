@@ -5,7 +5,6 @@
 
     header {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         padding: 5px;
     }
@@ -37,8 +36,16 @@
 
     nav {
         display: flex;
+        margin: auto;
+        max-width: 100%;
         flex-direction: row !important;
         justify-content: space-evenly;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
     }
 
     #container-home {
@@ -52,6 +59,13 @@
         height: 300px;
         width: 100%;
         margin: 0px;
+    }
+
+    section img {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+        display: block;
     }
 
     .events {
@@ -73,7 +87,10 @@
 
     .navigation a {
         display: block;
-        flex: 1 1 100%;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+        display: block;
     }
 
     .stuff {

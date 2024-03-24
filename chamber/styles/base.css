@@ -31,6 +31,10 @@ header img {
     border: 2px solid black;
 }
 
+header h1 {
+    padding: 5px;
+}
+
 .vertical-line {
     display: none;
 }
@@ -121,6 +125,11 @@ nav a {
     border: 1px solid rgba(0, 0, 0, .75);
     padding: 0.5rem;
     opacity: 0.75;
+    cursor: pointer;
+}
+
+#container-home button:hover {
+    background: radial-gradient(#fafbfd, rgb(67, 143, 189));
 }
 
 #container-home button p {
@@ -134,8 +143,72 @@ nav a {
     position: absolute;
     top: 1rem;
     left: 1rem;
+    padding: 1px;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+.banner {
+    display: none;
+    /* Initially hide the banner */
+    background-color: #007bff;
+    /* Banner background color */
+    color: #fff;
+    /* Banner text color */
+    padding: 20px;
+    /* Padding for banner content */
+    position: fixed;
+    /* Fix banner position */
+    bottom: 0;
+    /* Position at the bottom of the viewport */
+    left: 0;
+    /* Align to the left */
+    width: 100%;
+    /* Full width */
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+section {
+    margin: 10px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+/* This is the line separator under the h2 */
+hr.separator {
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 5px;
+    width: 70%;
+}
+
+/* This is the line separator under the h2 */
+hr.weather-separator {
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 5px;
+    width: 70%;
+}
+
+/* This is the line separator under the h2 */
+hr.event-separator {
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
 }
 
 /* Styles for the thankyou page. */

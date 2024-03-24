@@ -1,6 +1,6 @@
-@media screen and (min-width:550px) {
+@media screen and (min-width:700px) {
     body {
-        max-width: 80%;
+        max-width: 100%;
     }
 
     header {
@@ -18,6 +18,7 @@
     .header-left {
         display: flex;
         align-items: center;
+        margin-left: auto;
     }
 
     /* Dark mode button */
@@ -30,23 +31,25 @@
     .header-left img {
         max-width: 100px;
         max-height: 100px;
+        margin: 10px;
     }
 
     .header-left h1 {
         margin-left: 10px;
+        font-size: 1.3em;
     }
 
     /* Vertical line separator */
     .vertical-line {
         border-left: 2px solid #000;
         height: 100px;
-        margin: 0 20px;
+        margin: auto;
         display: block;
     }
 
     .header-right {
         display: flex;
-        margin: auto;
+        margin-right: auto;
     }
 
     /* Navigation menu */
@@ -58,7 +61,8 @@
     .navigation a {
         text-decoration: none;
         color: snow;
-        padding: 20px;
+        padding: 10px;
+        font-size: medium;
         text-align: center;
         display: block;
     }

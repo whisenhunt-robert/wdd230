@@ -148,28 +148,17 @@ nav a {
 }
 
 .banner {
-    display: none;
-    /* Initially hide the banner */
-    background-color: #007bff;
-    /* Banner background color */
-    color: #fff;
-    /* Banner text color */
-    padding: 20px;
-    /* Padding for banner content */
-    position: fixed;
-    /* Fix banner position */
-    bottom: 0;
-    /* Position at the bottom of the viewport */
-    left: 0;
-    /* Align to the left */
-    width: 100%;
-    /* Full width */
+    width: 90%;
+    position: relative;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
 }
 
-.close-btn {
+.close-button {
     position: absolute;
     top: 5px;
-    right: 10px;
+    right: 5px;
     cursor: pointer;
 }
 

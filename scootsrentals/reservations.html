@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Scoots~ Rentals Reservations Page</title>
+    <meta name="description" content="~Scoots~ Rentals Reservations Page, scoots rentals">
+    <meta name="author" content="Robert Whisenhunt">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="~Scoots~ Rentals Reservations Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://whisenhunt-robert.github.io/wdd230/scootsrentals/reservations.html">
+</head>
+
+<body>
+    <header class="header-content">
+        <h1>~Scoots~ Rentals</h1>
+        <img src="images/scoots-cozumel.jpg" alt="Scoots Cozumel">
+        <hr>
+        <nav class="navigation">
+            <a href="https://whisenhunt-robert.github.io/wdd230/scootsrentals/">Home</a>
+            <a href="https://whisenhunt-robert.github.io/wdd230/scootsrentals/rentals.html">Rentals</a>
+            <a href="https://whisenhunt-robert.github.io/wdd230/scootsrentals/reservations.html"
+                class="active">Reservations</a>
+            <a href="https://whisenhunt-robert.github.io/wdd230/scootsrentals/contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main id="reservePage">
+        <div id="rentLeft">
+            <h2>Rental Services and Agreements</h2>
+            <ul>
+                <li>A $50 security depositi is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physcial location.</li>
+            </ul>
+        </div>
+        <div id="rentRight">
+            <h2>Rental Application</h2>
+            <form method="get" action="thankyou.html" class="rentForm">
+                <label for="formDate" title="Please enter today's date.">
+                    *Date:
+                    <input type="text" id="formDate" name="formdate" required>
+                </label>
+                <label for="formPeriod" title="Please enter a rental period.">
+                    *Rental Period:
+                    <input type="text" id="formPeriod" name="formperiod" required>
+                </label>
+                <label for="rentalNum" title="Please enter the rental number.">
+                    *Rental Number:
+                    <input type="text" id="rentalNum" name="rentalnum" required>
+                </label>
+                <label for="phoneNum" title="Please enter your phone number.">
+                    *Phone Number:
+                    <input type="tel" id="phoneNum" name="phoneNum" required>
+                </label>
+                <label for="firstName" title="Please enter your first name.">
+                    *First Name:
+                    <input type="text" id="firstName" name="firstname" required>
+                </label>
+                <label for="lastName" title="Please enter your last name.">
+                    *Last Name:
+                    <input type="text" id="lastName" name="lastname" required>
+                </label>
+                <label for="email" title="Please enter your e-mail.">
+                    *E-mail:
+                    <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" required>
+                </label>
+                <label for="homeState" title="Please enter your home state.">
+                    *Home State/Country:
+                    <input type="text" id="homeState" name="homestate" required>
+                </label>
+                <label for="cruiseLine" title="Please enter the name of the business or organization.">
+                    Cruise Line:
+                    <input type="text" id="cruiseLine" name="cruiseline">
+                </label>
+                <label for="acommendComment" title="Please type any additional accomendations or comments.">
+                    Acommendations/Comments:
+                </label>
+                <textarea title="Please type any additional accomendations or comments." id="accomndComment"
+                    name="accomendcomment" rows="4" cols="41"
+                    placeholder="Please type any additional accomendations or comments.">
+                    </textarea>
+                <!-- Hidden input for current date/time -->
+                <input type="hidden" name="formLoadTime" id="formLoadTime">
+                <input type="submit" value="Send Application" class="submitButton">
+            </form>
+    </main>
+    <footer class="footer-content">
+        <h2>Robert Whisenhunt</h2>
+    </footer>
+</body>
+
+</html>

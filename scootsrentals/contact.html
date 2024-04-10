@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Scoots~ Rentals Home Page</title>
+    <meta name="description" content="~Scoots~ Rentals Home Page, scoots rentals">
+    <meta name="author" content="Robert Whisenhunt">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="~Scoots~ Rentals Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://whisenhunt-robert.github.io/wdd230/scootsrentals/index.html">
+</head>
+
+<body>
+    <header class="header-content">
+        <h1>~Scoots~ Rentals</h1>
+        <img src="images/scoots-cozumel.jpg" alt="Scoots Cozumel">
+        <hr>
+        <nav class="navigation">
+            <a href="https://whisenhunt-robert.github.io/wdd230/scootsrentals/">Home</a>
+            <a href="https://whisenhunt-robert.github.io/wdd230/scootsrentals/rentals.html">Rentals</a>
+            <a href="https://whisenhunt-robert.github.io/wdd230/scootsrentals/reservations.html">Reservations</a>
+            <a href="https://whisenhunt-robert.github.io/wdd230/scootsrentals/contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Information</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d239293.76244058926!2d-87.0284159!3d20.4255199!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1712785214647!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="scootsmap"></iframe>
+        <form method="get" action="thankyou.html" class="contactForm">
+            <label for="firstName" title="Please enter your first name.">
+                *First Name:
+                <input type="text" id="firstName" name="firstname" required>
+            </label>
+            <label for="lastName" title="Please enter your last name.">
+                *Last Name:
+                <input type="text" id="lastName" name="lastname" required>
+            </label>
+            <label for="email" title="Please enter your e-mail.">
+                *E-mail:
+                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" required>
+            </label>
+            <label for="contactComment" title="Please type any additional comments.">
+                Comments:
+            </label>
+            <textarea title="Please type any additional comments." id="contactComment" name="contactcomment" rows="4"
+                cols="41" placeholder="Please type any additional comments.">
+                    </textarea>
+            <!-- Hidden input for current date/time -->
+            <input type="hidden" name="formLoadTime" id="formLoadTime">
+            <input type="submit" value="Send Application" class="submitButton">
+        </form>
+    </main>
+    <footer class="footer-content">
+        <h2>Robert Whisenhunt</h2>
+    </footer>
+</body>
+
+</html>

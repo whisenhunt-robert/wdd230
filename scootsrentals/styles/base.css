@@ -30,6 +30,34 @@ header img {
     box-shadow: 0 0 100px #F4A460;
 }
 
+.active::before {
+    content: "🛵";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.navigation a:hover {
+    background-color: #00ced1;
+    color: black;
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
+}
+
 hr {
     width: 20%;
     margin: 20px 0;

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Scoots~ Rentals Home Page</title>
+    <meta name="description" content="~Scoots~ Rentals Home Page, scoots rentals">
+    <meta name="author" content="Robert Whisenhunt">
+    <link href="../scootsrentals/styles/normalize.css" rel="stylesheet">
+    <link href="../scootsrentals/styles/base.css" rel="stylesheet">
+    <link href="../scootsrentals/styles/large.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="~Scoots~ Rentals Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.worldatlas.com/r/w1300/upload/e4/1e/ed/cozumel-mexico-timothy-l-barnes.jpg">
+    <meta property="og:url" content="https://whisenhunt-robert.github.io/wdd230/scootsrentals/index.html">
+</head>
+
+<body>
+    <div class="weather-message">
+        <span class="temperature" id="temp-max"></span>
+        <button class="close-button" onclick="closeMessage()">❌</button>
+    </div>
+    <header class="header-content">
+        <h1>~Scoots~ Rentals</h1>
+        <img src="images/scoots-cozumel.webp" alt="Scoots Cozumel">
+        <hr>
+        <nav class="navigation">
+            <a href="https://whisenhunt-robert.github.io/wdd230/scootsrentals/" class="active">Home</a>
+            <a href="https://whisenhunt-robert.github.io/wdd230/scootsrentals/rentals.html">Rentals</a>
+            <a href="https://whisenhunt-robert.github.io/wdd230/scootsrentals/reservations.html">Reservations</a>
+            <a href="https://whisenhunt-robert.github.io/wdd230/scootsrentals/contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <a href="https://www.mobilitrip.com/wp-content/uploads/2017/05/MobilityScootersCozumel02.jpg">Image used</a>
+    </main>
+    <footer class="footer-content">
+        <h3>Robert Whisenhunt</h3>
+        <p>&copy;<span id="currentYear"></span> ~Scoots~ Rentals</p>
+    </footer>
+    <script src="../scootsrentals/scripts/weather.js"></script>
+    <script src="../scootsrentals/scripts/weather-banner.js"></script>
+    <script src="../scootsrentals/scripts/getdates.js"></script>
+</body>
+
+</html>

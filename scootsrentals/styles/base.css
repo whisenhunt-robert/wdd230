@@ -72,7 +72,7 @@ hr {
     border-bottom: 2px solid black;
 }
 
-main {
+#container-home {
     grid-template-columns: 1fr;
     /* Change to a single column layout for smaller screens */
 }

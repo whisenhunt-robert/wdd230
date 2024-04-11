@@ -6,6 +6,13 @@ body {
 }
 
 header,
+nav,
+main,
+footer {
+    font-family: 'Lato', 'Noto Sans', 'Rubik', sans-serif;
+}
+
+header,
 footer {
     margin: 10px;
     padding: 5px;
@@ -65,6 +72,17 @@ hr {
     border-bottom: 2px solid black;
 }
 
+main {
+    grid-template-columns: 1fr;
+    /* Change to a single column layout for smaller screens */
+}
+
+.social-section,
+.weather-section {
+    grid-column: 1;
+    /* Place social-section and weather-section in the first column for smaller screens */
+}
+
 .footer-content {
     display: flex;
     flex-direction: column;
@@ -101,4 +119,104 @@ td {
 
 th {
     background-color: #F4A460;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icon a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icon img {
+    width: 50px;
+    background-color: white;
+    height: auto;
+}
+
+/* Reserve Page CSS */
+#reservePage {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: auto;
+    padding: 10px;
+}
+
+#reservePage h2 {
+    border: solid 2px #000;
+    background-color: #F4A460;
+}
+
+.rentForm:root {
+    --background-color: #eee;
+    --border-radius: 6px;
+    --border-left-width: thick;
+}
+
+#rentLeft,
+#rentRight {
+    border: solid 1px #000;
+    border-radius: var(--border-radius);
+    padding: 10px;
+}
+
+#rentLeft li {
+    padding: 10px;
+}
+
+.rentForm {
+    padding: 5px;
+}
+
+.rentForm label {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: .9rem;
+}
+
+.rentForm input[type="text"],
+.rentForm input[type="password"],
+.rentForm input[type="email"],
+.rentForm input[type="tel"] {
+    background-color: var(--background-color);
+    display: block;
+    border: solid 1px #888;
+    border-radius: var(--border-radius);
+    padding: .50rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    margin-top: 3px;
+}
+
+.rentForm input[type="range"] {
+    margin-right: 6px;
+}
+
+.rentForm input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#00ced1, #F4A460);
+    color: #000;
+    border-radius: var(--border-radius);
+    padding: .8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.submitbutton:hover {
+    cursor: pointer;
+}
+
+#thankyouPage p {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
 }

@@ -1,99 +1,64 @@
-/* Navigation menu */
-.navigation {
-    flex-direction: row;
-    list-style: none;
-}
+@media screen and (min-width:700px) {
 
-.navigation a {
-    border: solid 2px #000;
-    margin: 5px;
-    text-decoration: none;
-    color: #000;
-    background-color: #F4A460;
-    padding: 10px;
-    font-size: large;
-    text-align: center;
-    display: block;
-}
+    /* Navigation menu */
+    .navigation {
+        flex-direction: row;
+        list-style: none;
+    }
 
+    .navigation a {
+        border: solid 2px #000;
+        margin: 5px;
+        text-decoration: none;
+        color: #000;
+        background-color: #F4A460;
+        padding: 10px;
+        font-size: large;
+        text-align: center;
+        display: block;
+    }
 
-/* Reservations Page CSS */
-@media screen and (min-width: 700px) {
-    #reservePage {
+    #container-home {
         width: 90%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-        margin: auto;
-        padding: 10px;
+        grid-template-columns: auto 1fr;
+        /* Left side takes up auto width, right side takes up remaining space */
+        gap: 20px;
+        /* Gap between columns */
     }
-}
 
-#reservePage h2 {
-    border: solid 2px #000;
-    background-color: #F4A460;
-}
+    .cta-button {
+        margin-left: 10px;
+    }
 
-.rentForm:root {
-    --background-color: #eee;
-    --border-radius: 6px;
-    --border-left-width: thick;
-}
+    section {
+        margin: 10px;
+        padding: 10px;
+        border: solid 2px #000;
+    }
 
-#rentLeft,
-#rentRight {
-    border: solid 1px #000;
-    border-radius: var(--border-radius);
-    padding: 10px;
-}
+    h2 {
+        border: solid 2px #000;
+        background-color: #F4A460;
+        padding: 5px;
+    }
 
-#rentLeft li {
-    padding: 10px;
-}
+    main {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        /* Two columns: one for rental-section and one for social-section & weather-section */
+        grid-gap: 20px;
+        /* Adjust the gap between grid items */
+    }
 
-.rentForm {
-    padding: 5px;
-}
+    .rental-section {
+        grid-column: 1;
+        /* Place rental-section in the first column */
+    }
 
-.rentForm label {
-    display: block;
-    padding-top: 1rem;
-    color: black;
-    font-size: .9rem;
-}
-
-.rentForm input[type="text"],
-.rentForm input[type="password"],
-.rentForm input[type="email"],
-.rentForm input[type="tel"] {
-    background-color: var(--background-color);
-    display: block;
-    border: solid 1px #888;
-    border-radius: var(--border-radius);
-    padding: .50rem;
-    color: #555;
-    width: 100%;
-    max-width: 400px;
-    appearance: none;
-    margin-top: 3px;
-}
-
-.rentForm input[type="range"] {
-    margin-right: 6px;
-}
-
-.rentForm input[type="submit"] {
-    border: none;
-    background-image: linear-gradient(#00ced1, #F4A460);
-    color: #000;
-    border-radius: var(--border-radius);
-    padding: .8rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    max-width: 400px;
-}
-
-#membershipLevel {
-    margin-top: 3px;
+    .social-section,
+    .weather-section {
+        grid-column: 2;
+        /* Place social-section and weather-section in the second column */
+    }
 }

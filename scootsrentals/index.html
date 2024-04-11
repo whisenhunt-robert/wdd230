@@ -7,9 +7,9 @@
     <title>~Scoots~ Rentals Home Page</title>
     <meta name="description" content="~Scoots~ Rentals Home Page, scoots rentals">
     <meta name="author" content="Robert Whisenhunt">
-    <link href="styles/normalize.css" rel="stylesheet">
-    <link href="styles/base.css" rel="stylesheet">
-    <link href="styles/large.css" rel="stylesheet">
+    <link href="../scootsrentals/styles/normalize.css" rel="stylesheet">
+    <link href="../scootsrentals/styles/base.css" rel="stylesheet">
+    <link href="../scootsrentals/styles/large.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="~Scoots~ Rentals Home Page">
     <meta property="og:type" content="website">
@@ -18,6 +18,10 @@
 </head>
 
 <body>
+    <div class="weather-message">
+        <span class="temperature" id="temp-max"></span>
+        <button class="close-button" onclick="closeMessage()">❌</button>
+    </div>
     <header class="header-content">
         <h1>~Scoots~ Rentals</h1>
         <img src="images/scoots-cozumel.jpg" alt="Scoots Cozumel">
@@ -31,34 +35,47 @@
     </header>
 
     <main>
-        <section>
-            <h2>Types of Rentals</h2>
-            <p>Honda Motor Scooters</p>
-            <ul>
-                <li>Honda Metropolitan (49cc) - 1 person</li>
-                <li>Honda Dio (110cc) - 2 person</li>
-                <li>Honda PC150 (149cc) - 2 person</li>
-            </ul>
-            <p>Side-by-Side ATVs</p>
-            <ul>
-                <li>Honda Pioneer 1000 - 4 person</li>
-            </ul>
-            <p>Jeeps</p>
-            <ul>
-                <li>Jeep Wrangler - 4 door manuel with A/C - 5 person</li>
-                <li>Jeep Wrangler - 2 door - open air - manuel - 4 person</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Social Media</h2>
-        </section>
-        <section>
-            <h2>Weather</h2>
-        </section>
+        <div id="container-home">
+            <div class="cta-button">
+                <button onclick="document.location='reservations.html'">Reserve a Scooter</button>
+            </div>
+            <section class="rental-section">
+                <h2>Types of Rentals</h2>
+                <p>Honda Motor Scooters</p>
+                <ul>
+                    <li>Honda Metropolitan (49cc) - 1 person</li>
+                    <li>Honda Dio (110cc) - 2 person</li>
+                    <li>Honda PC150 (149cc) - 2 person</li>
+                </ul>
+                <p>Side-by-Side ATVs</p>
+                <ul>
+                    <li>Honda Pioneer 1000 - 4 person</li>
+                </ul>
+                <p>Jeeps</p>
+                <ul>
+                    <li>Jeep Wrangler - 4 door manuel with A/C - 5 person</li>
+                    <li>Jeep Wrangler - 2 door - open air - manuel - 4 person</li>
+                </ul>
+            </section>
+            <section class="social-section">
+                <h2>Social Media</h2>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/pages/Cozumel-MX/143660165736320" target="_blank"><img
+                            src="images/facebook-icon.png" alt="Facebook"></a>
+                </div>
+            </section>
+            <section class="weather-section">
+                <h2>Weather</h2>
+                <div id="weather-info">
+                </div>
+            </section>
+        </div>
     </main>
     <footer class="footer-content">
-        <h2>Robert Whisenhunt</h2>
+        <h3>Robert Whisenhunt</h3>
     </footer>
+    <script src="../scootsrentals/scripts/weather.js"></script>
+    <script src="../scootsrentals/scripts/weather-banner.js"></script>
 </body>
 
 </html>
